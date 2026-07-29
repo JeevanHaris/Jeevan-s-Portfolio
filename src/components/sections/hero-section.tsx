@@ -32,7 +32,7 @@ export default function HeroSection() {
 
       {/* Hero Portrait - Generated abstract glowing silhouette */}
       <FadeIn delay={0.6} y={30} className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 z-10 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]">
-        <Magnet padding={150} strength={3}>
+        <Magnet padding={150} strength={3} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.6s ease-in-out">
           <div className="relative w-full aspect-square md:aspect-[4/5] lg:aspect-square flex items-end justify-center">
             <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0C] via-transparent to-transparent z-10 pointer-events-none" />
             

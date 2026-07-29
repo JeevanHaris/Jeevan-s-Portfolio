@@ -2,6 +2,8 @@ import React from 'react';
 import FadeIn from '../ui/fade-in';
 import AnimatedText from '../ui/animated-text';
 import ContactButton from '../ui/contact-button';
+import { Button } from '../ui/button';
+import { Github, Linkedin, Instagram } from 'lucide-react';
 
 export default function AboutSection() {
   return (
@@ -47,9 +49,55 @@ export default function AboutSection() {
         </div>
       </FadeIn>
 
-      {/* Contact Button */}
-      <FadeIn delay={0.3} className="relative z-10">
-        <ContactButton className="px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-sm md:text-base" />
+      <FadeIn delay={0.45} className="relative z-10 w-full max-w-5xl mt-16">
+        <section id="social" className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 shadow-[0_20px_80px_rgba(0,0,0,0.25)] backdrop-blur-xl">
+          <div className="flex flex-col items-center text-center gap-4">
+            <p className="text-sm uppercase tracking-[0.5em] text-[#D7E2EA]/70">Connect with me</p>
+            <h3 className="text-3xl sm:text-4xl font-black tracking-tight text-white">LinkedIn, GitHub & Instagram</h3>
+            <p className="max-w-2xl text-[#D7E2EA]/70 text-base sm:text-lg leading-relaxed">
+              Click any contact button to jump here and view my professional and social profiles.
+              Explore my LinkedIn experience, GitHub projects, and Instagram highlights.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            <Button asChild variant="secondary" size="lg">
+              <a
+                href="https://www.linkedin.com/in/jeevanharis"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <Linkedin className="h-4 w-4" />
+                LinkedIn Profile
+              </a>
+            </Button>
+
+            <Button asChild variant="secondary" size="lg">
+              <a
+                href="https://github.com/JeevanHaris"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <Github className="h-4 w-4" />
+                GitHub Profile
+              </a>
+            </Button>
+
+            <Button asChild variant="secondary" size="lg">
+              <a
+                href="https://www.instagram.com/jeevan_haris"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <Instagram className="h-4 w-4" />
+                Instagram @jeevan_haris
+              </a>
+            </Button>
+          </div>
+        </section>
       </FadeIn>
 
     </section>

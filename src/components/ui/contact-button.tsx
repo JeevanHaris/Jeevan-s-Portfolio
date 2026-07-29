@@ -7,7 +7,7 @@ interface ContactButtonProps {
 export default function ContactButton({ className = '' }: ContactButtonProps) {
   return (
     <a
-      href="mailto:jeevanharis02@gmail.com"
+      href="#social"
       className={`inline-flex items-center justify-center rounded-full font-medium uppercase tracking-widest text-white transition-transform hover:scale-105 active:scale-95 ${className}`}
       style={{
         background: 'linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)',

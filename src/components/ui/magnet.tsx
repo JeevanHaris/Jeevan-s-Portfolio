@@ -5,6 +5,8 @@ interface MagnetProps {
   className?: string;
   padding?: number;
   strength?: number;
+  activeTransition?: string;
+  inactiveTransition?: string;
 }
 
 export default function Magnet({
@@ -12,6 +14,8 @@ export default function Magnet({
   className = '',
   padding = 150,
   strength = 3,
+  activeTransition = 'transform 0.3s ease-out',
+  inactiveTransition = 'transform 0.6s ease-in-out',
 }: MagnetProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -58,9 +62,7 @@ export default function Magnet({
       className={className}
       style={{
         transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
-        transition: isHovered
-          ? 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
-          : 'transform 0.6s cubic-bezier(0.45, 0.05, 0.55, 0.95)',
+        transition: isHovered ? activeTransition : inactiveTransition,
         willChange: 'transform',
       }}
     >
