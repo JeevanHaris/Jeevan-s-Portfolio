@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from api.config import settings
-from api.models import HealthCheckResponse
+from ..config import settings
+from ..models import HealthCheckResponse
 
 router = APIRouter(prefix="/health", tags=["Health"])
 

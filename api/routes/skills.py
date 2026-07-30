@@ -1,6 +1,6 @@
 from typing import List
 from fastapi import APIRouter
-from api.models import SkillItem
+from ..models import SkillItem
 
 router = APIRouter(prefix="/skills", tags=["Skills"])
 

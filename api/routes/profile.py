@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.models import ProfileInfo, SocialLinks
+from ..models import ProfileInfo, SocialLinks
 
 router = APIRouter(tags=["Profile"])
 

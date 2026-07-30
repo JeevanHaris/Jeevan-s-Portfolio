@@ -1,6 +1,6 @@
 from typing import List
 from fastapi import APIRouter
-from api.models import ProjectItem
+from ..models import ProjectItem
 
 router = APIRouter(prefix="/projects", tags=["Projects"])
 

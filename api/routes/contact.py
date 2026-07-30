@@ -1,6 +1,6 @@
 import logging
 from fastapi import APIRouter, HTTPException, status
-from api.models import ContactMessage, ContactResponse
+from ..models import ContactMessage, ContactResponse
 
 logger = logging.getLogger("uvicorn.error")
 
