@@ -1,393 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <title>Jeevan Haris — Software Developer</title>
-  <meta name="description" content="Jeevan Haris — A Computer Science Engineering student passionate about Artificial Intelligence, Full-Stack Development, and building impactful software." />
+  <meta name="description"
+    content="Jeevan Haris — A Computer Science Engineering student passionate about Artificial Intelligence, Full-Stack Development, and building impactful software." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Jeevan Haris — Software Developer" />
-  <meta property="og:description" content="CS Engineering student. Full-Stack AI Developer. Flask · FastAPI · Python · JavaScript." />
+  <meta property="og:description"
+    content="CS Engineering student. Full-Stack AI Developer. Flask · FastAPI · Python · JavaScript." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="/static/css/style.css" />
 </head>
-<body>
-<main>
 
-  <!-- ═══════════════════════════════════════════════════════
+<body>
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════
        HERO SECTION
   ═══════════════════════════════════════════════════════ -->
-  <section class="hero" id="home">
+    <section class="hero" id="home">
 
-    <!-- Navbar -->
-    <nav class="hero__nav fade-in-el fade-in-el--up" id="hero-nav" data-delay="0" style="transition-delay:0s">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <!-- Navbar -->
+      <nav class="hero__nav fade-in-el fade-in-el--up" id="hero-nav" data-delay="0" style="transition-delay:0s">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    <!-- Heading -->
-    <div class="hero__heading-wrap">
-      <div class="fade-in-el" data-delay="0.15">
-        <h1 class="hero__title hero-heading">Hi, i'm Jeevan Haris</h1>
-      </div>
-    </div>
-
-    <!-- Portrait / Silhouette -->
-    <div class="hero__portrait fade-in-el" data-delay="0.6">
-      <div class="hero__magnet-wrap" id="hero-magnet">
-        <div class="hero__portrait-gradient"></div>
-        <div class="hero__silhouette">
-          <div class="hero__silhouette-glow1"></div>
-          <div class="hero__silhouette-glow2"></div>
-          <div class="hero__silhouette-ring1"></div>
-          <div class="hero__silhouette-ring2"></div>
+      <!-- Heading -->
+      <div class="hero__heading-wrap">
+        <div class="fade-in-el" data-delay="0.15">
+          <h1 class="hero__title hero-heading">Hi, i'm Jeevan Haris</h1>
         </div>
       </div>
-    </div>
 
-    <!-- Bottom Bar -->
-    <div class="hero__bottom">
-      <div class="fade-in-el" data-delay="0.35">
-        <p class="hero__tagline">
-          A Computer Science Engineering student passionate about Artificial Intelligence,
-          Full-Stack Development, and building impactful software.
-        </p>
+      <!-- Portrait / Silhouette -->
+      <div class="hero__portrait fade-in-el" data-delay="0.6">
+        <div class="hero__magnet-wrap" id="hero-magnet">
+          <div class="hero__portrait-gradient"></div>
+          <div class="hero__silhouette">
+            <div class="hero__silhouette-glow1"></div>
+            <div class="hero__silhouette-glow2"></div>
+            <div class="hero__silhouette-ring1"></div>
+            <div class="hero__silhouette-ring2"></div>
+          </div>
+        </div>
       </div>
-      <div class="fade-in-el" data-delay="0.5">
-        <a href="#social" class="contact-btn">Contact Me</a>
+
+      <!-- Bottom Bar -->
+      <div class="hero__bottom">
+        <div class="fade-in-el" data-delay="0.35">
+          <p class="hero__tagline">
+            A Computer Science Engineering student passionate about Artificial Intelligence,
+            Full-Stack Development, and building impactful software.
+          </p>
+        </div>
+        <div class="fade-in-el" data-delay="0.5">
+          <a href="#social" class="contact-btn">Contact Me</a>
+        </div>
       </div>
-    </div>
 
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
        MARQUEE / TECH STACK
   ═══════════════════════════════════════════════════════ -->
-  <section class="marquee-section" id="marquee-section">
+    <section class="marquee-section" id="marquee-section">
 
-    <!-- Row 1 — scrolls right -->
-    <div class="marquee-row" id="marquee-row1">
-      <!-- tech cards injected x3 for seamless loop -->
-      {% set row1 = [
-        ('Python',      'PY',  '#3776AB', '#FFF'),
-        ('Java',        'JA',  '#ED8B00', '#FFF'),
-        ('Flask',       'FL',  '#000000', '#FFF'),
-        ('FastAPI',     'FA',  '#009688', '#FFF'),
-        ('React',       'RE',  '#61DAFB', '#000'),
-        ('TypeScript',  'TS',  '#3178C6', '#FFF'),
-        ('Tailwind CSS','TW',  '#06B6D4', '#FFF'),
-        ('Git',         'GI',  '#F05032', '#FFF'),
-        ('SQLite',      'SQ',  '#003B57', '#FFF'),
-        ('Postman',     'PM',  '#FF6C37', '#FFF'),
-        ('VS Code',     'VS',  '#007ACC', '#FFF'),
-      ] %}
-      {% for _ in range(3) %}
+      <!-- Row 1 — scrolls right -->
+      <div class="marquee-row" id="marquee-row1">
+        <!-- tech cards injected x3 for seamless loop -->
+        {% set row1 = [
+        ('Python', 'PY', '#3776AB', '#FFF'),
+        ('Java', 'JA', '#ED8B00', '#FFF'),
+        ('Flask', 'FL', '#000000', '#FFF'),
+        ('FastAPI', 'FA', '#009688', '#FFF'),
+        ('React', 'RE', '#61DAFB', '#000'),
+        ('TypeScript', 'TS', '#3178C6', '#FFF'),
+        ('Tailwind CSS','TW', '#06B6D4', '#FFF'),
+        ('Git', 'GI', '#F05032', '#FFF'),
+        ('SQLite', 'SQ', '#003B57', '#FFF'),
+        ('Postman', 'PM', '#FF6C37', '#FFF'),
+        ('VS Code', 'VS', '#007ACC', '#FFF'),
+        ] %}
+        {% for _ in range(3) %}
         {% for name, abbr, bg, color in row1 %}
         <div class="tech-card">
           <div class="tech-card__badge" style="background:{{ bg }};color:{{ color }}">{{ abbr }}</div>
           <span class="tech-card__name">{{ name }}</span>
         </div>
         {% endfor %}
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
 
-    <!-- Row 2 — scrolls left -->
-    <div class="marquee-row" id="marquee-row2">
-      {% set row2 = [
-        ('Linux',       'LX',  '#FCC624', '#000'),
-        ('Groq API',    'GQ',  '#F55036', '#FFF'),
-        ('Chart.js',    'CJ',  '#FF6384', '#FFF'),
-        ('NumPy',       'NU',  '#013243', '#FFF'),
-        ('Tkinter',     'TK',  '#FFD43B', '#000'),
-        ('JavaScript',  'JS',  '#F7DF1E', '#000'),
-        ('HTML5',       'HT',  '#E34F26', '#FFF'),
-        ('CSS3',        'CS',  '#1572B6', '#FFF'),
-        ('REST APIs',   'API', '#4CAF50', '#FFF'),
-        ('Speech Rec',  'SR',  '#9C27B0', '#FFF'),
-      ] %}
-      {% for _ in range(3) %}
+      <!-- Row 2 — scrolls left -->
+      <div class="marquee-row" id="marquee-row2">
+        {% set row2 = [
+        ('Linux', 'LX', '#FCC624', '#000'),
+        ('Groq API', 'GQ', '#F55036', '#FFF'),
+        ('Chart.js', 'CJ', '#FF6384', '#FFF'),
+        ('NumPy', 'NU', '#013243', '#FFF'),
+        ('Tkinter', 'TK', '#FFD43B', '#000'),
+        ('JavaScript', 'JS', '#F7DF1E', '#000'),
+        ('HTML5', 'HT', '#E34F26', '#FFF'),
+        ('CSS3', 'CS', '#1572B6', '#FFF'),
+        ('REST APIs', 'API', '#4CAF50', '#FFF'),
+        ('Speech Rec', 'SR', '#9C27B0', '#FFF'),
+        ] %}
+        {% for _ in range(3) %}
         {% for name, abbr, bg, color in row2 %}
         <div class="tech-card">
           <div class="tech-card__badge" style="background:{{ bg }};color:{{ color }}">{{ abbr }}</div>
           <span class="tech-card__name">{{ name }}</span>
         </div>
         {% endfor %}
-      {% endfor %}
-    </div>
+        {% endfor %}
+      </div>
 
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
        ABOUT SECTION
   ═══════════════════════════════════════════════════════ -->
-  <section class="about-section" id="about">
-    <!-- Decorative blobs -->
-    <div class="about-blob about-blob--tl"></div>
-    <div class="about-blob about-blob--bl"></div>
-    <div class="about-blob about-blob--tr"></div>
-    <div class="about-blob about-blob--br"></div>
+    <section class="about-section" id="about">
+      <!-- Decorative blobs -->
+      <div class="about-blob about-blob--tl"></div>
+      <div class="about-blob about-blob--bl"></div>
+      <div class="about-blob about-blob--tr"></div>
+      <div class="about-blob about-blob--br"></div>
 
-    <!-- Heading -->
-    <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;margin-bottom:clamp(3rem,5vw,5rem);position:relative;z-index:10;">
-      <h2 class="about-section__heading hero-heading">About me</h2>
-    </div>
+      <!-- Heading -->
+      <div class="fade-in-el" data-delay="0"
+        style="width:100%;display:flex;justify-content:center;margin-bottom:clamp(3rem,5vw,5rem);position:relative;z-index:10;">
+        <h2 class="about-section__heading hero-heading">About me</h2>
+      </div>
 
-    <!-- Animated bio text -->
-    <p
-      class="about-section__bio"
-      id="animated-bio"
-      data-text="Third-year Computer Science Engineering student with hands-on experience across Flask, FastAPI, and full-stack web development. i enjoy building AI-integrated tools, health-tech systems, and data dashboards — and i'm always looking for the next problem worth solving. Let's build something incredible together!"
-    ></p>
+      <!-- Animated bio text -->
+      <p class="about-section__bio" id="animated-bio"
+        data-text="Third-year Computer Science Engineering student with hands-on experience across Flask, FastAPI, and full-stack web development. i enjoy building AI-integrated tools, health-tech systems, and data dashboards — and i'm always looking for the next problem worth solving. Let's build something incredible together!">
+      </p>
 
-    <!-- Achievements row -->
-    <div class="fade-in-el about-section__stats" data-delay="0.15">
-      <span class="stat-item">2nd Prize – Code Hunt, NIT</span>
-      <span class="stat-item">Top 5 – CKD Care Planner Hackathon</span>
-      <span class="stat-item">CCNA Certified</span>
-      <span class="stat-item">IBM AI Foundations</span>
-    </div>
+      <!-- Achievements row -->
+      <div class="fade-in-el about-section__stats" data-delay="0.15">
+        <span class="stat-item">2nd Prize – Code Hunt, NIT</span>
+        <span class="stat-item">Top 5 – CKD Care Planner Hackathon</span>
+        <span class="stat-item">CCNA Certified</span>
+        <span class="stat-item">IBM AI Foundations</span>
+      </div>
 
-    <!-- Social card -->
-    <div class="fade-in-el" data-delay="0.45" style="width:100%;max-width:64rem;margin-top:4rem;position:relative;z-index:10;">
-      <section class="social-card" id="social">
-        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;">
-          <p class="social-card__label">Connect with me</p>
-          <h3 class="social-card__title">LinkedIn, GitHub &amp; Instagram</h3>
-          <p class="social-card__desc">
-            Click any contact button to jump here and view my professional and social profiles.
-            Explore my LinkedIn experience, GitHub projects, and Instagram highlights.
-          </p>
-        </div>
-        <div class="social-grid">
-          <a href="https://www.linkedin.com/in/jeevanharis" target="_blank" rel="noreferrer" class="social-btn" id="btn-linkedin">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn Profile
-          </a>
-          <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer" class="social-btn" id="btn-github">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            GitHub Profile
-          </a>
-          <a href="https://www.instagram.com/jeevan_haris" target="_blank" rel="noreferrer" class="social-btn" id="btn-instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            Instagram @jeevan_haris
-          </a>
-        </div>
-      </section>
-    </div>
+      <!-- Social card -->
+      <div class="fade-in-el" data-delay="0.45"
+        style="width:100%;max-width:64rem;margin-top:4rem;position:relative;z-index:10;">
+        <section class="social-card" id="social">
+          <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:1rem;">
+            <p class="social-card__label">Connect with me</p>
+            <h3 class="social-card__title">LinkedIn, GitHub &amp; Instagram</h3>
+            <p class="social-card__desc">
+              Click any contact button to jump here and view my professional and social profiles.
+              Explore my LinkedIn experience, GitHub projects, and Instagram highlights.
+            </p>
+          </div>
+          <div class="social-grid">
+            <a href="https://www.linkedin.com/in/jeevanharis" target="_blank" rel="noreferrer" class="social-btn"
+              id="btn-linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn Profile
+            </a>
+            <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer" class="social-btn"
+              id="btn-github">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub Profile
+            </a>
+            <a href="https://www.instagram.com/jeevan_haris" target="_blank" rel="noreferrer" class="social-btn"
+              id="btn-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+              Instagram @jeevan_haris
+            </a>
+          </div>
+        </section>
+      </div>
 
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
        SKILLS SECTION
   ═══════════════════════════════════════════════════════ -->
-  <section class="skills-section" id="skills">
+    <section class="skills-section" id="skills">
 
-    <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;">
-      <h2 class="skills-section__heading">Skills</h2>
-    </div>
+      <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;">
+        <h2 class="skills-section__heading">Skills</h2>
+      </div>
 
-    <ul class="skills-list" style="list-style:none;">
+      <ul class="skills-list" style="list-style:none;">
 
-      <li class="skill-item fade-in-el" data-delay="0">
-        <div class="skill-item__num">01</div>
-        <div>
-          <h3 class="skill-item__name">AI &amp; LLM Integration</h3>
-          <p class="skill-item__desc">Building AI-powered tools with the Groq API, hybrid command engines, and intelligent fallback systems.</p>
-        </div>
-      </li>
+        <li class="skill-item fade-in-el" data-delay="0">
+          <div class="skill-item__num">01</div>
+          <div>
+            <h3 class="skill-item__name">AI &amp; LLM Integration</h3>
+            <p class="skill-item__desc">Building AI-powered tools with the Groq API, hybrid command engines, and
+              intelligent fallback systems.</p>
+          </div>
+        </li>
 
-      <li class="skill-item fade-in-el" data-delay="0.1">
-        <div class="skill-item__num">02</div>
-        <div>
-          <h3 class="skill-item__name">Full-Stack Web Development</h3>
-          <p class="skill-item__desc">Responsive, end-to-end applications using Flask, FastAPI, HTML5, CSS3, and JavaScript.</p>
-        </div>
-      </li>
+        <li class="skill-item fade-in-el" data-delay="0.1">
+          <div class="skill-item__num">02</div>
+          <div>
+            <h3 class="skill-item__name">Full-Stack Web Development</h3>
+            <p class="skill-item__desc">Responsive, end-to-end applications using Flask, FastAPI, HTML5, CSS3, and
+              JavaScript.</p>
+          </div>
+        </li>
 
-      <li class="skill-item fade-in-el" data-delay="0.2">
-        <div class="skill-item__num">03</div>
-        <div>
-          <h3 class="skill-item__name">Backend &amp; API Development</h3>
-          <p class="skill-item__desc">REST APIs, SQLite-backed data models, and Postman-tested backend systems.</p>
-        </div>
-      </li>
+        <li class="skill-item fade-in-el" data-delay="0.2">
+          <div class="skill-item__num">03</div>
+          <div>
+            <h3 class="skill-item__name">Backend &amp; API Development</h3>
+            <p class="skill-item__desc">REST APIs, SQLite-backed data models, and Postman-tested backend systems.</p>
+          </div>
+        </li>
 
-      <li class="skill-item fade-in-el" data-delay="0.3">
-        <div class="skill-item__num">04</div>
-        <div>
-          <h3 class="skill-item__name">Cross-Stack Problem Solving</h3>
-          <p class="skill-item__desc">Parallel builds across Python and Java (e.g. Flask vs. Spring Boot), reinforcing adaptable engineering fundamentals.</p>
-        </div>
-      </li>
+        <li class="skill-item fade-in-el" data-delay="0.3">
+          <div class="skill-item__num">04</div>
+          <div>
+            <h3 class="skill-item__name">Cross-Stack Problem Solving</h3>
+            <p class="skill-item__desc">Parallel builds across Python and Java (e.g. Flask vs. Spring Boot), reinforcing
+              adaptable engineering fundamentals.</p>
+          </div>
+        </li>
 
-      <li class="skill-item fade-in-el" data-delay="0.4">
-        <div class="skill-item__num">05</div>
-        <div>
-          <h3 class="skill-item__name">Data Structures &amp; Core CS</h3>
-          <p class="skill-item__desc">Strong grounding in Data Structures, Algorithms, and Database Management from coursework and competitive coding.</p>
-        </div>
-      </li>
+        <li class="skill-item fade-in-el" data-delay="0.4">
+          <div class="skill-item__num">05</div>
+          <div>
+            <h3 class="skill-item__name">Data Structures &amp; Core CS</h3>
+            <p class="skill-item__desc">Strong grounding in Data Structures, Algorithms, and Database Management from
+              coursework and competitive coding.</p>
+          </div>
+        </li>
 
-    </ul>
+      </ul>
 
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
        PROJECTS SECTION
   ═══════════════════════════════════════════════════════ -->
-  <section class="projects-section" id="projects">
+    <section class="projects-section" id="projects">
 
-    <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;">
-      <h2 class="projects-section__heading hero-heading">Projects</h2>
-    </div>
-
-    <div class="projects-stack">
-
-      <!-- Project 01 -->
-      <div class="project-slot">
-        <article class="project-card" id="project-card-0">
-          <div class="project-card__top">
-            <div>
-              <div style="display:flex;align-items:center;gap:1.5rem;">
-                <span class="project-card__num">01</span>
-                <div>
-                  <p class="project-card__category">AI Assistant</p>
-                  <h3 class="project-card__title">ARIA – AI Voice Desktop Assistant</h3>
-                </div>
-              </div>
-              <p class="project-card__desc">A local-first, voice-controlled desktop assistant with speech recognition and text-to-speech. Runs a hybrid command engine with 54+ regex-matched commands and an AI fallback powered by the Groq API.</p>
-              <p class="project-card__tech">Python • Flask • JavaScript • Web Speech API • Groq API</p>
-            </div>
-            <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer" class="project-card__github">View on GitHub</a>
-          </div>
-          <div class="project-card__images">
-            <div class="project-card__img-col-left">
-              <div class="project-card__img-small" style="background:linear-gradient(135deg,#4A00E0,#8E2DE2)"></div>
-              <div class="project-card__img-tall"  style="background:linear-gradient(225deg,#4A00E0,#8E2DE2)"></div>
-            </div>
-            <div class="project-card__img-right" style="background:linear-gradient(135deg,#4A00E0,#8E2DE2)">
-              <div class="project-card__preview-border">
-                <span class="project-card__preview-label">System Preview</span>
-              </div>
-            </div>
-          </div>
-        </article>
+      <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;">
+        <h2 class="projects-section__heading hero-heading">Projects</h2>
       </div>
 
-      <!-- Project 02 -->
-      <div class="project-slot">
-        <article class="project-card" id="project-card-1">
-          <div class="project-card__top">
-            <div>
-              <div style="display:flex;align-items:center;gap:1.5rem;">
-                <span class="project-card__num">02</span>
-                <div>
-                  <p class="project-card__category">Health-Tech</p>
-                  <h3 class="project-card__title">Dialysis Management System</h3>
+      <div class="projects-stack">
+
+        <!-- Project 01 -->
+        <div class="project-slot">
+          <article class="project-card" id="project-card-0">
+            <div class="project-card__top">
+              <div>
+                <div style="display:flex;align-items:center;gap:1.5rem;">
+                  <span class="project-card__num">01</span>
+                  <div>
+                    <p class="project-card__category">AI Assistant</p>
+                    <h3 class="project-card__title">ARIA – AI Voice Desktop Assistant</h3>
+                  </div>
                 </div>
+                <p class="project-card__desc">A local-first, voice-controlled desktop assistant with speech recognition
+                  and text-to-speech. Runs a hybrid command engine with 54+ regex-matched commands and an AI fallback
+                  powered by the Groq API.</p>
+                <p class="project-card__tech">Python • Flask • JavaScript • Web Speech API • Groq API</p>
               </div>
-              <p class="project-card__desc">A Flask-based web application to manage dialysis patients, treatment records, and scheduling — with patient-record and session-tracking modules.</p>
-              <p class="project-card__tech">Python • Flask • HTML • CSS • SQLite • JavaScript</p>
+              <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer"
+                class="project-card__github">View on GitHub</a>
             </div>
-            <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer" class="project-card__github">View on GitHub</a>
-          </div>
-          <div class="project-card__images">
-            <div class="project-card__img-col-left">
-              <div class="project-card__img-small" style="background:linear-gradient(135deg,#00c6ff,#0072ff)"></div>
-              <div class="project-card__img-tall"  style="background:linear-gradient(225deg,#00c6ff,#0072ff)"></div>
-            </div>
-            <div class="project-card__img-right" style="background:linear-gradient(135deg,#00c6ff,#0072ff)">
-              <div class="project-card__preview-border">
-                <span class="project-card__preview-label">System Preview</span>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
 
-      <!-- Project 03 -->
-      <div class="project-slot">
-        <article class="project-card" id="project-card-2">
-          <div class="project-card__top">
-            <div>
-              <div style="display:flex;align-items:center;gap:1.5rem;">
-                <span class="project-card__num">03</span>
-                <div>
-                  <p class="project-card__category">Social Impact / Data</p>
-                  <h3 class="project-card__title">Disaster Aggregation System</h3>
+          </article>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="project-slot">
+          <article class="project-card" id="project-card-1">
+            <div class="project-card__top">
+              <div>
+                <div style="display:flex;align-items:center;gap:1.5rem;">
+                  <span class="project-card__num">02</span>
+                  <div>
+                    <p class="project-card__category">Health-Tech</p>
+                    <h3 class="project-card__title">Dialysis Management System</h3>
+                  </div>
                 </div>
+                <p class="project-card__desc">A Flask-based web application to manage dialysis patients, treatment
+                  records, and scheduling — with patient-record and session-tracking modules.</p>
+                <p class="project-card__tech">Python • Flask • HTML • CSS • SQLite • JavaScript</p>
               </div>
-              <p class="project-card__desc">A web dashboard that aggregates and displays real-time disaster data from multiple sources for faster situational awareness during emergencies.</p>
-              <p class="project-card__tech">Python • Flask • HTML • CSS</p>
+              <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer"
+                class="project-card__github">View on GitHub</a>
             </div>
-            <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer" class="project-card__github">View on GitHub</a>
-          </div>
-          <div class="project-card__images">
-            <div class="project-card__img-col-left">
-              <div class="project-card__img-small" style="background:linear-gradient(135deg,#f12711,#f5af19)"></div>
-              <div class="project-card__img-tall"  style="background:linear-gradient(225deg,#f12711,#f5af19)"></div>
-            </div>
-            <div class="project-card__img-right" style="background:linear-gradient(135deg,#f12711,#f5af19)">
-              <div class="project-card__preview-border">
-                <span class="project-card__preview-label">System Preview</span>
+
+          </article>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="project-slot">
+          <article class="project-card" id="project-card-2">
+            <div class="project-card__top">
+              <div>
+                <div style="display:flex;align-items:center;gap:1.5rem;">
+                  <span class="project-card__num">03</span>
+                  <div>
+                    <p class="project-card__category">Social Impact / Data</p>
+                    <h3 class="project-card__title">Disaster Aggregation System</h3>
+                  </div>
+                </div>
+                <p class="project-card__desc">A web dashboard that aggregates and displays real-time disaster data from
+                  multiple sources for faster situational awareness during emergencies.</p>
+                <p class="project-card__tech">Python • Flask • HTML • CSS</p>
               </div>
+              <a href="https://github.com/JeevanHaris" target="_blank" rel="noreferrer"
+                class="project-card__github">View on GitHub</a>
             </div>
-          </div>
-        </article>
+
+          </article>
+        </div>
+
       </div>
+      <div class="projects-spacer"></div>
+    </section>
 
-    </div>
-    <div class="projects-spacer"></div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
        CONTACT FORM SECTION
   ═══════════════════════════════════════════════════════ -->
-  <section class="contact-section" id="contact">
+    <section class="contact-section" id="contact">
 
-    <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;">
-      <h2 class="contact-section__heading hero-heading">Contact</h2>
-    </div>
+      <div class="fade-in-el" data-delay="0" style="width:100%;display:flex;justify-content:center;">
+        <h2 class="contact-section__heading hero-heading">Contact</h2>
+      </div>
 
-    <div class="fade-in-el" data-delay="0.2" style="width:100%;max-width:48rem;">
-      <form class="contact-form" id="contact-form" novalidate>
+      <div class="fade-in-el" data-delay="0.2" style="width:100%;max-width:48rem;">
+        <form class="contact-form" id="contact-form" novalidate>
 
-        <div class="contact-form__row">
-          <input type="text"  name="name"    id="f-name"    placeholder="Your name"          required autocomplete="name" />
-          <input type="email" name="email"   id="f-email"   placeholder="your@email.com"     required autocomplete="email" />
-        </div>
-        <input type="text" name="subject" id="f-subject" placeholder="Subject (optional)" autocomplete="off" />
-        <textarea name="message" id="f-message" placeholder="Your message…" required></textarea>
+          <div class="contact-form__row">
+            <input type="text" name="name" id="f-name" placeholder="Your name" required autocomplete="name" />
+            <input type="email" name="email" id="f-email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <input type="text" name="subject" id="f-subject" placeholder="Subject (optional)" autocomplete="off" />
+          <textarea name="message" id="f-message" placeholder="Your message…" required></textarea>
 
-        <div id="form-status" class="form-status"></div>
+          <div id="form-status" class="form-status"></div>
 
-        <div class="contact-form__submit">
-          <button type="submit" class="contact-btn" id="contact-submit" style="font-size:0.9rem;padding:0.75rem 2rem;">
-            Send Message
-          </button>
-        </div>
+          <div class="contact-form__submit">
+            <button type="submit" class="contact-btn" id="contact-submit"
+              style="font-size:0.9rem;padding:0.75rem 2rem;">
+              Send Message
+            </button>
+          </div>
 
-      </form>
-    </div>
+        </form>
+      </div>
 
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
        FOOTER
   ═══════════════════════════════════════════════════════ -->
-  <footer class="footer">
-    <p>© 2025 Jeevan Haris &nbsp;·&nbsp; Built with Flask &amp; Vanilla JS</p>
-  </footer>
+    <footer class="footer">
+      <p>© 2025 Jeevan Haris &nbsp;·&nbsp; Built with Flask &amp; Vanilla JS</p>
+    </footer>
 
-</main>
+  </main>
 
-<script src="/static/js/main.js"></script>
+  <script src="/static/js/main.js"></script>
 </body>
+
 </html>

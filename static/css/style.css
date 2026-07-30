@@ -617,7 +617,7 @@ main {
 }
 
 .project-slot {
-  height: 85vh;
+  height: 45vh;
   width: 100%;
   display: flex;
   align-items: flex-start;
