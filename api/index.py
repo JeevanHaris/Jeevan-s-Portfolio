@@ -1,13 +1,21 @@
 import os
 import logging
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
 # ---------------------------------------------------------------------------
 # App setup
 # ---------------------------------------------------------------------------
 
-app = Flask(__name__)
+# Resolve project root (two levels up from api/)
+_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+app = Flask(
+    __name__,
+    template_folder=os.path.join(_ROOT, "templates"),
+    static_folder=os.path.join(_ROOT, "static"),
+    static_url_path="/static",
+)
 
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 
@@ -120,6 +128,15 @@ SKILLS = [
 # ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Frontend route — serves the portfolio page
+# ---------------------------------------------------------------------------
+
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html")
+
 
 @app.route("/api", methods=["GET"])
 def api_root():
