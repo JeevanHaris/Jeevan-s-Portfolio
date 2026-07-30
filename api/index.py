@@ -7,9 +7,9 @@ app = FastAPI(
     title=settings.APP_NAME,
     version=settings.APP_VERSION,
     description="FastAPI Backend for Jeevan Haris Portfolio website",
-    docs_url="/docs",
-    redoc_url="/redoc",
-    openapi_url="/openapi.json"
+    docs_url="/api/docs",
+    redoc_url="/api/redoc",
+    openapi_url="/api/openapi.json"
 )
 
 # Enable CORS for frontend communication
@@ -21,20 +21,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount Routers under both /api and / for maximum deployment flexibility
-# (e.g. Vercel Serverless /api/(.*) vs standalone container)
-for prefix in ["/api", ""]:
-    app.include_router(health.router, prefix=prefix)
-    app.include_router(profile.router, prefix=prefix)
-    app.include_router(projects.router, prefix=prefix)
-    app.include_router(skills.router, prefix=prefix)
-    app.include_router(contact.router, prefix=prefix)
+# Mount Routers under /api
+app.include_router(health.router, prefix="/api")
+app.include_router(profile.router, prefix="/api")
+app.include_router(projects.router, prefix="/api")
+app.include_router(skills.router, prefix="/api")
+app.include_router(contact.router, prefix="/api")
 
-@app.get("/")
-async def root():
+@app.get("/api")
+async def api_root():
     return {
         "status": "online",
         "message": f"Welcome to {settings.APP_NAME}",
-        "docs": "/docs",
+        "docs": "/api/docs",
         "version": settings.APP_VERSION
     }
